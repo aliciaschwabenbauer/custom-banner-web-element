@@ -1,6 +1,6 @@
 {
   "name": "custom-banner-web-element",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "HTML privacy banner element",
   "main": "Banner.js",
   "scripts": {
