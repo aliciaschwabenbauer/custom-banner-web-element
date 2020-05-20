@@ -35,8 +35,14 @@ export class Banner extends HTMLElement {
         this.$button = shadowRoot.querySelector('button');
  
         this.$button.addEventListener('click', () => {
-            alert(this.accept);
-        });  
+          alert("Datenschutz-Erklärung zugestimmt!")
+          this.dispatchEvent(new CustomEvent('on-accept',
+                {
+                  bubbles: true,
+                  cancelable: false,
+                  composed: true,
+                }))
+        }); 
     }
      
       //set and get application name
@@ -80,4 +86,4 @@ export class Banner extends HTMLElement {
       }
 }
 
-window.customElements.define('custom-banner-js', Banner);
+window.customElements.define('custom-banner', Banner);
