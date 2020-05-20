@@ -36,13 +36,6 @@ export class Banner extends HTMLElement {
  
         this.$button.addEventListener('click', () => {
             alert(this.accept);
-            
-            this.dispatchEvent(new CustomEvent('on-accept',
-            {
-                bubbles: true,
-                cancelable: false,
-                composed: true,
-            }))
         });  
     }
      
@@ -62,6 +55,15 @@ export class Banner extends HTMLElement {
 
       set link(value){
           this.setAttribute('policy-link', value);
+      }
+
+      //set and get on accept attributes
+      get accept(){
+          return this.getAttribute('on-accept');
+      }
+
+      set accept(event){
+          this.setAttribute('on-accept', event);
       }
      
       static get observedAttributes() {
