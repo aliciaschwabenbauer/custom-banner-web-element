@@ -1,16 +1,22 @@
 {
-    "name": "custom-banner-web-element",
-    "version": "1.0.0",
-    "description": "HTML Banner Component",
-    "main": "Banner.js",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/aliciaschwabenbauer/custom-banner-web-element.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/aliciaschwabenbauer/custom-banner-web-element/issues"
-    },
-    "homepage": "https://github.com/aliciaschwabenbauer/custom-banner-web-element#readme"
-  }
+  "name": "custom-banner-web-element",
+  "version": "1.0.0",
+  "description": "HTML privacy banner element",
+  "main": "Banner.js",
+  "scripts": {
+    "test": "echo \\\\\\\"Error: no test specified\\\\\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliciaschwabenbauer/custom-banner-web-element.git"
+  },
+  "keywords": [
+    "custom"
+  ],
+  "author": "banner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliciaschwabenbauer/custom-banner-web-element/issues"
+  },
+  "homepage": "https://github.com/aliciaschwabenbauer/custom-banner-web-element#readme"
+}
