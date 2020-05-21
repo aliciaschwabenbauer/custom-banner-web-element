@@ -7,8 +7,19 @@ As it is an npm package it can simply be importet with:
 `npm install custom-banner-web-element`
 
 ### React 
-In a react application(typescript) just:
+In a react application(typescript) just
+1. create and declarations.d.ts file and add: 
 
+```
+# code block
+declare namespace JSX {
+    interface IntrinsicElements {
+        "custom-banner": any;
+    }
+}
+```
+
+2. in your component: 
 ```
 # code block
 import 'custom-banner-web-element'
