@@ -12,20 +12,22 @@ In a react application(typescript) just:
 ```
 # code block
 import 'custom-banner-web-element'
-...
-//initialize an object reference 
-const ref = createRef(); 
+
 ...
 
-// add an event listener
+//initialize an object reference 
+const ref = createRef(); 
+
+...
+
+// add an event listener for whatever you want to do after accept is clicked 
 const el: any = ref.current;
 el.addEventListener('on-accept', () => {
-    // callback function for whatever you want to do after accept is clicked
-    setInteractionAllowed(classes.withInteraction)
-    setBannerVisible(false); 
+    // callback function 
 });
 
 ...
+
 // render function in return staement(hooks)/render function with reference set from above 
 <custom-banner 
           ref={ref} 
