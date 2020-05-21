@@ -35,7 +35,7 @@ export class Banner extends HTMLElement {
         this.$button = shadowRoot.querySelector('button');
  
         this.$button.addEventListener('click', () => {
-          alert("Datenschutz-Erklärung zugestimmt!")
+          console.log("Datenschutz-Erklärung zugestimmt!")
           this.dispatchEvent(new CustomEvent('on-accept',
                 {
                   bubbles: true,
