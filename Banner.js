@@ -73,7 +73,7 @@ export class Banner extends HTMLElement {
       }
      
       static get observedAttributes() {
-        return ['application-name', 'privacy-link', 'on-accept'];
+        return ['application-name', 'policy-link', 'on-accept'];
       }
      
       attributeChangedCallback(name, oldVal, newVal) {
